@@ -4,6 +4,7 @@ Unity 2019.1.0f2
 PC version executable: bin\exe  
 PC version zip: bin\zip  
 Android version installer: bin\apk  
+Source: src\
 
 Interface
 
