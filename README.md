@@ -1,9 +1,9 @@
 Adam Morgenstern - Unity Code Challenge  
 Unity 2019.1.0f2
 
-PC version executable: bin\exe
-PC version zip: bin\zip
-Android version installer: bin\apk
+PC version executable: bin\exe  
+PC version zip: bin\zip  
+Android version installer: bin\apk  
 
 Interface
 
