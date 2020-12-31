@@ -1,0 +1,2 @@
+F:\Games\Unity3d_Projects\AG_CodeChallenge\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+F:\Games\Unity3d_Projects\AG_CodeChallenge\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
