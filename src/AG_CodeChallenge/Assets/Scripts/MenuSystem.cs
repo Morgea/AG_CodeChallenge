@@ -181,7 +181,7 @@ public class MenuSystem : MonoBehaviour
         // Open panel
         while (t < 1)
         {
-            t += Mathf.Clamp(Time.deltaTime / openTimeB, 0, 1);
+            t = Mathf.Clamp(t + (Time.deltaTime / openTimeB), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
 
             if (t > 0.5f && opening && !ranButtonChange)
@@ -208,7 +208,7 @@ public class MenuSystem : MonoBehaviour
 
         while (t < 1)
         {
-            t += Mathf.Clamp(Time.deltaTime / (openTimeB/2), 0, 1);
+            t = Mathf.Clamp(t + (Time.deltaTime / (openTimeB / 2)), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
 
             Vector3[] startPos = new Vector3[shapeButtons.Length];
@@ -237,7 +237,7 @@ public class MenuSystem : MonoBehaviour
 
         while (t < 1)
         {
-            t += Mathf.Clamp(Time.deltaTime / (openTimeB / 2), 0, 1);
+            t = Mathf.Clamp(t + (Time.deltaTime / (openTimeB / 2)), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
 
             Vector3[] startPos = new Vector3[toggleButtons.Length];

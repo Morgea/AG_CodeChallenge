@@ -55,7 +55,7 @@ public class ColorRandomizer : MonoBehaviour
 
         while (t < 1)
         {
-            t += Mathf.Clamp (Time.deltaTime / changeTime, 0, 1);
+            t = Mathf.Clamp (t + (Time.deltaTime / changeTime), 0, 1);
 
             Color currColor = Color.Lerp(prevColor, newColor, t);
 

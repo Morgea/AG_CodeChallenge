@@ -40,7 +40,7 @@ public class OrientationChange : MonoBehaviour
 
         while (t < 1)
         {
-            t += Mathf.Clamp (Time.deltaTime / 2.0f, 0, 1);
+            t = Mathf.Clamp (t + (Time.deltaTime / 2.0f), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
 
             mainCam.transform.localPosition = Vector3.Lerp(start_Pos, target_Pos, tEased);

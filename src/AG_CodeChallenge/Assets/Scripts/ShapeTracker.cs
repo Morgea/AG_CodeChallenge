@@ -183,7 +183,7 @@ public class ShapeTracker : MonoBehaviour
         // Grow or shrink
         while (t < 1)
         {
-            t += Mathf.Clamp(Time.deltaTime / changeTime, 0, 1);
+            t = Mathf.Clamp(t + (Time.deltaTime / changeTime), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
             shapes[whichShape].transform.localScale = Vector3.Lerp(startScale, endScale, tEased);
 
@@ -199,7 +199,7 @@ public class ShapeTracker : MonoBehaviour
 
             while (t < 1)
             {
-                t += Mathf.Clamp(Time.deltaTime / growTimeBounce, 0, 1);
+                t = Mathf.Clamp(t + (Time.deltaTime / growTimeBounce), 0, 1);
                 float tEased = Mathf.SmoothStep(0, 1, t);
                 shapes[whichShape].transform.localScale = Vector3.Lerp(endScale, Vector3.one, tEased);
 

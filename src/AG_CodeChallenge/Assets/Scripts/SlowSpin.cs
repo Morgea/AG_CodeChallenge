@@ -45,7 +45,7 @@ public class SlowSpin : MonoBehaviour
 
         while (t < 1)
         {
-            t += Mathf.Clamp(Time.deltaTime / speedChangeOver, 0, 1);
+            t = Mathf.Clamp(t + (Time.deltaTime / speedChangeOver), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
             spinSpeed = Mathf.Lerp(oldSpinSpeed, spinSpeedGoal, tEased);
             yield return null;

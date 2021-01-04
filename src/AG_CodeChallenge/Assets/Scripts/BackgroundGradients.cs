@@ -64,7 +64,7 @@ public class BackgroundGradients : MonoBehaviour
 
         while (t < 1)
         {
-            t += Mathf.Clamp(Time.deltaTime / changeTime, 0, 1);
+            t = Mathf.Clamp(t + (Time.deltaTime / changeTime), 0, 1);
             float tEased = Mathf.SmoothStep(0, 1, t);
 
             Color newSkyCol = Color.Lerp(startSkyCol, endSkyCol, tEased);
